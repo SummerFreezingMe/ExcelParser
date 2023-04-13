@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.example">
+
+    <class name="Competention" table="competentions">
+        <id name="description" type="string" column="description">
+            <generator class="assigned"/>
+        </id>
+
+        <property name="subIndex">
+            <column name="subIndex"/>
+        </property>
+        <property name="index">
+            <column name="index"/>
+        </property>
+        <property name="type">
+            <column name="type"/>
+        </property>
+    </class>
+
+</hibernate-mapping>
